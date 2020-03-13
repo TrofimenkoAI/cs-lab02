@@ -4,15 +4,24 @@ using namespace std;
 
 int main()
 {
-    int a, b, max;
+    int a, b, max, min;
     cout << "Enter A, B" << endl;
     cin >> a >> b;
 
 
-    if (a > b)
+    if (a > b){
         max = a;
-     else
-        max = b;
+        min = b;
+    }
+    else if (a < b)
+        {
+            min = a;
+            max = b;
+        }
+        else {
+            max = 0;
+            min = 0;
+        }
 
 
     cout << "A + B = " << a + b << '\n'
