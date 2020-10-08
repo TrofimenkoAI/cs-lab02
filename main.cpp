@@ -12,6 +12,9 @@ int main()
     if (a > b){
         max = a;
         min = b;
+        a = b;
+        b = a;
+
     }
     else if (a < b)
         {
